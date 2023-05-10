@@ -1,0 +1,36 @@
+.nav-link{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-link:hover{
+    text-decoration: none;
+    border-bottom: 2px solid #FF003C;
+    color: #FF003C;
+}
+
+#brand a h1{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#brand #red{
+    color: #FF003C;
+}
+
+#brand a h1:hover{
+    text-decoration: none;
+    border-bottom: 0px;
+    color: black;
+}
+
+#brand a:hover{
+    text-decoration: none;
+    border-bottom: 0px;
+    color: black;
+}
+
+#brand:hover{
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,40 @@
+#banner {
+    background-color: #FFE8E8;
+}
+
+#banner-heading{
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: rgb(35, 3, 72)
+} 
+
+#banner-button{
+    border-radius: 0px;
+    margin-top: 10px;
+}
+
+#banner-button:hover{
+    background-color: #FF003C;
+    border-color: #FF003C;
+    
+}
+
+.hov{
+    visibility: hidden;
+    padding-top: 10px;
+    
+}
+
+.card{
+    border : 0px;
+    border-bottom: 2px solid #FF003C;
+    border-radius: 0px;
+}
+
+.card :hover + .hov{
+    visibility: visible;
+    background-color: #FF003C;
+    padding-top: 10px;
+    color: White;
+}

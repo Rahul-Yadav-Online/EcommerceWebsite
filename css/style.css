@@ -2,66 +2,8 @@
 
 
 *{
+    
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    letter-spacing: 2px;
-}
-
-.nav-link{
-    text-decoration: none;
-    color: black;
-}
-
-.nav-link:hover{
-    text-decoration: none;
-    border-bottom: 2px solid #FF003C;
-    color: #FF003C;
-}
-
-#brand a h1{
-    font-size: 20px;
-    font-weight: 600;
-}
-
-#brand #red{
-    color: #FF003C;
-}
-
-#brand a h1:hover{
-    text-decoration: none;
-    border-bottom: 0px;
-    color: black;
-}
-
-#brand a:hover{
-    text-decoration: none;
-    border-bottom: 0px;
-    color: black;
-}
-
-#brand:hover{
-    text-decoration: none;
-    color: black;
-}
-
-
-#banner {
-    background-color: #FFE8E8;
-}
-
-#banner-heading{
-    font-size: 60px;
-    font-weight: 700;
-    letter-spacing: 3px;
-    color: rgb(35, 3, 72)
-} 
-
-#banner-button{
-    border-radius: 0px;
-}
-
-#banner-button:hover{
-    background-color: #FF003C;
-    border-color: #FF003C;
-    
+    letter-spacing: 1px;
 }
