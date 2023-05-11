@@ -44,6 +44,7 @@ function addProductDynamic(){
     let desc = document.getElementById('description').value;
     let price = Number(document.getElementById('price').value);
     let imageUrl = document.getElementById('image-file-url').value;
+    imageUrl  = './images/'+imageUrl.split("\\")[2];
     let newProd = new Products(name, price,imageUrl,desc);
     let index = Object.keys(localStorage).length;
     localStorage.setItem(index, JSON.stringify(newProd));
