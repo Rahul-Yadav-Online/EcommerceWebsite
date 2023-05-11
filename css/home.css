@@ -26,15 +26,25 @@
     
 }
 
-.card{
+.ucard{
     border : 0px;
     border-bottom: 2px solid #FF003C;
     border-radius: 0px;
+    padding-bottom: 0px;
 }
 
-.card :hover + .hov{
+.ucard :hover + .hov{
     visibility: visible;
     background-color: #FF003C;
     padding-top: 10px;
+    padding-bottom: auto;
     color: White;
+}
+
+.ucard-red{
+    background-color: #FF003C;
+}
+
+.large-font{
+    font-size: 50px;
 }
