@@ -27,31 +27,24 @@ class Products{
     }
 }
 
-class ProductsList{
-    constructor(productsArray=[]){
-        this._products = productsArray;
-    }
-
-    get products(){
-        return this._products;
-    }
-
-    addProduct(product){
-        this._products.push();
-    }
-
-    getProductString(i){
-        return JSON.stringify(this._products[i]); 
-    }
-}
-
-
 let productItems = [
     new Products("Bon Voyage", 52349, './images/Product1.png'),
     new Products("Sea Smasher", 51399, './images/Product2.png'),
     new Products("Kings Men XI", 53000, './images/Product3.png'),
     new Products("Bes Tornado", 46299, './images/Product4.png'),
-    // new Products("Rolex GMT", 60000, './images/Product5.png')
+    new Products("Rolex GMT", 60000, './images/Product5.png')
 ];
-let productCatelog = new ProductsList(productItems);
 
+for(let i in productItems){
+    localStorage.setItem(i, JSON.stringify(productItems[i]));
+}
+
+function addProductDynamic(){
+    let name = document.getElementById('product-name').value;
+    let desc = document.getElementById('description').value;
+    let price = Number(document.getElementById('price').value);
+    let imageUrl = document.getElementById('image-file-url').value;
+    let newProd = new Products(name, price,imageUrl,desc);
+    let index = Object.keys(localStorage).length;
+    localStorage.setItem(index, JSON.stringify(newProd));
+}
